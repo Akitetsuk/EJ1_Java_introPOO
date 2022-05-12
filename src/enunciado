@@ -1,0 +1,34 @@
+PROBLEMA 1 – Modificadores de acceso
+Comprobaremos que estas reglas de los modificadores de acceso se cumplen:
+•private: únicamente la clase puede acceder a la propiedad o método.
+•package private (valor por defecto si no se indica ninguno): solo las clases en el mismo paquete pueden acceder a la propiedad o método.
+•protected: las clases del mismo paquete y que heredan de la clase pueden acceder a la propiedad o método.
+•public: la propiedad o método es accesible desde cualquier método de otra clase.
+
+a) Crea la clase vehículo, que contendrá los siguientes atributos:
+-Color
+-Caballos
+-Marca
+-Modelo
+
+Hazlos  todos  “public”  para  que  sean  accesibles  desde  fuera  de  la  clase  y  del package.
+
+b) Crea la clase Main dentro del mismo paquete que utilice la clase Vehículo realizada en el apartado anterior. Asigna un valor a cada atributo de la clase vehículo.
+c) Crea la clase Coche que hereda de la clase Vehiculo, dentro del mismo paqueteque  utilice  Vehiculo.  Para  manipular  los  datos  de  Vehiculo,  crea  un  constructor en Coche.
+d) Copia los ficheros Main y Coche de los apartados anteriores en otro package
+
+NOTA: De esta manera hemos simulado 4 situaciones de acceso diferentes:
+•    Clase en package propio
+•    Subclase en package propio
+•    Clase en otro package.
+•    Subclase en otro package
+
+Como  el  modificador  de  los  atributos  de  la  clase  Vehiculo  es  el  public,  tenemos acceso total desde cualquier sitio, y por lo tanto no debe de haber ningún error en el código en este momento
+
+e)   Quitamos   el   modificador   public   de   los   atributos de   Vehiculo,   dejando   el modificador default (por defecto). ¿En qué ficheros ocurren errores? ¿Es coherente con lo que dice la teoría?
+R) Solo las clases en el mismo paquete pueden acceder al atributo con modificador por defecto.
+
+f)  Ponemos  el  modificador  protected  a  los  atributos  de  Vehiculo  ¿En  qué  ficheros ocurren errores? ¿Es coherente con lo que dice la teoría?
+R)Las clases del mismo paquete y que heredan de la clase pueden acceder al atributo con modificador protected
+
+
